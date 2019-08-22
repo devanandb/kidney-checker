@@ -17,5 +17,6 @@
 		"gridsome-plugin-tailwindcss": "^2.2.19",
 		"release-it": "^12.3.5"
 	},
-	"release-it": {}
+	"release-it": {},
+	"version": "0.0.1"
 }
