@@ -1,0 +1,25 @@
+{
+	"name": "kidney-checker",
+	"private": true,
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
+		"release-patch": "changelog -p && git add CHANGELOG.md && git commit -m 'chore:Update CHANGELOG.md' && release-it patch",
+		"release-minor": "changelog -m && git add CHANGELOG.md && git commit -m 'chore:Update CHANGELOG.md' && release-it minor",
+		"release-major": "changelog -M && git add CHANGELOG.md && git commit -m 'chore:Update CHANGELOG.md' && release-it major"
+	},
+	"dependencies": {
+		"gridsome": "^0.6.0"
+	},
+	"devDependencies": {
+		"generate-changelog": "^1.8.0",
+		"gridsome-plugin-tailwindcss": "^2.2.19",
+		"release-it": "^12.3.5"
+	},
+	"release-it": {
+		"github": {
+			"release": true
+		}
+	}
+}
